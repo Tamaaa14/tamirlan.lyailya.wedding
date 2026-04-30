@@ -108,7 +108,7 @@ body{
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position:center top;
+  object-position: 50% 60%;
   display:block;
 }
 
@@ -337,7 +337,7 @@ body{
 .date-photo-wrap img{
   width:100%;height:100%;
   object-fit:cover;
-  object-position:center top;
+  object-position:50% 70%;
 }
 
 /* Date card */
@@ -360,7 +360,7 @@ body{
 
 .date-weekday{
   font-family:'Jost',sans-serif;
-  font-size:13px;
+  font-size:30px;
   letter-spacing:5px;
   text-transform:uppercase;
   color:rgba(255,255,255,.85);
@@ -378,9 +378,9 @@ body{
   flex:1;
   text-align:center;
   font-family:'Jost',sans-serif;
-  font-size:11px;
+  font-size:20px;
   letter-spacing:2px;
-  color:rgba(255,255,255,.65);
+  color:rgba(255,255,255,255);
   text-transform:uppercase;
   line-height:1.6;
 }
@@ -665,7 +665,7 @@ body{
 .cd-photo img{
   width:100%;height:100%;
   object-fit:cover;
-  object-position:center 20%;
+  object-position:50% 15%;
 }
 .cd-photo::after{
   content:'';
@@ -914,7 +914,7 @@ body{
 
   <div class="cover-arch-frame" style="height:520px">
     <div class="cover-photo">
-      <img id="img-cover" src="hero.jpg" alt="Жас жұбайлар" onerror="this.style.display='none'" style="border-radius: 0 0 0px 0px;";>
+      <img id="img-cover" src="hero2.jpg" alt="Жас жұбайлар" onerror="this.style.display='none'" style="border-radius: 0 0 0px 0px;";>
     </div>
 
     <!-- Names top-right -->
@@ -1185,8 +1185,8 @@ const C = {
   music:       "music.mp3",
 
   /* 📸 Фото (имена файлов или URL) */
-  photoCover:    "hero.jpg",
-  photoDate:     "10.jpg",
+  photoCover:    "hero2.jpg",
+  photoDate:     "8.jpg",
   photoVenue:    "4.jpg",
   photoCountdown:"2.jpg",
   photoProg1:    "2.jpg",
@@ -1201,7 +1201,6 @@ const C = {
     "5.jpg",
     "6.jpg",
     "7.jpg",
-    "8.jpg",
     "9.jpg",
     "10.jpg",
     "11.jpg",

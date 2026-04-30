@@ -23,7 +23,14 @@
             font-family: 'Champion';
             src: url('KZPFChampionScriptPro-Regular.ttf') format('opentype');
         }
-
+  @font-face {
+            font-family: 'sage';
+            src: url('vivoSansGlobal-Thin.ttf') format('opentype');
+        }
+  @font-face {
+            font-family: 'sage2';
+            src: url('vivoSansGlobal-Medium.ttf') format('opentype');
+        }
 :root {
   --g:       #4f5f3a;
   --g-dark:  #323d24;
@@ -179,7 +186,7 @@ body{
 }
 .cover-date-line{
   font-family:'Jost',sans-serif;
-  font-size:11px;
+  font-size:18px;
   letter-spacing:4px;
   color:var(--g-light);
   text-transform:uppercase;
@@ -248,7 +255,7 @@ body{
 .music-btn svg{width:22px;fill:#fff}
 
 .inv-greeting{
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:13px;
   letter-spacing:2.5px;
   line-height:2;
@@ -271,6 +278,15 @@ body{
   text-transform:uppercase;
   margin-bottom:15px;
 }
+.music-text{
+  font-family:'sage2',sans-serif;
+  font-size:8px;
+  letter-spacing:3px;
+  color:rgba(255,255,255,.6);
+  text-transform:uppercase;
+  margin-top:5px;
+  margin-bottom:10px;
+}
 .inv-script{
   font-family:'Champion',cursive;
   font-size:50px;
@@ -281,16 +297,16 @@ body{
 }
 
 .inv-text{
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:13px;
   letter-spacing:2px;
   line-height:2.2;
   color:rgba(255,255,255,.85);
   text-transform:uppercase;
-  margin-top:30px;
+  margin-top:10px;
 }
 .inv-joy{
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:14px;
   letter-spacing:2px;
   color:#fff;
@@ -359,7 +375,7 @@ body{
 }
 
 .date-weekday{
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:30px;
   letter-spacing:5px;
   text-transform:uppercase;
@@ -377,7 +393,7 @@ body{
 .date-side{
   flex:1;
   text-align:center;
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:20px;
   letter-spacing:2px;
   color:rgba(255,255,255,255);
@@ -395,7 +411,7 @@ body{
   border-right:1px solid rgba(255,255,255,.25);
 }
 .date-time-row{
-  font-family:'Jost',sans-serif;
+  font-family:'sage2',sans-serif;
   font-size:16px;
   letter-spacing:5px;
   color:#fff;
@@ -700,7 +716,7 @@ body{
 }
 .t-unit:last-child{border-right:none}
 .t-num{
-  font-family:'Great Vibes';
+  font-family:'playfair display';
   font-size:40px;
   font-weight:700;
   color:var(--g);
@@ -735,8 +751,8 @@ body{
 }
 
 .rsvp-script{
-  font-family:'Playfair Display',serif;
-  font-size:30px;
+  font-family:'sage',sans-serif;
+  font-size:31px;
   color:var(--g-dark);
   line-height:1.4;
   display:block;
@@ -744,7 +760,7 @@ body{
 }
 
 .field-label{
-  font-family:'Playfair Display',serif;
+  font-family:'sage',sans-serif;
   font-size:20px;
   color:var(--g-dark);
   display:block;
@@ -757,7 +773,7 @@ body{
   border:1px solid rgba(79,95,58,.3);
   border-radius:3px;
   background:#fff;
-  font-family:'Playfair Display',serif;
+  font-family:'sage',serif;
   font-size:14px;
   color:var(--text);
   outline:none;
@@ -774,7 +790,7 @@ body{
   margin-bottom:20px;
 }
 .counter-label-left{
-  font-family:'Playfair Display',serif;
+  font-family:'sage',serif;
   font-size:20px;
   color:var(--g-dark);
 }
@@ -797,8 +813,8 @@ body{
 .c-btn:hover{background:var(--g-light);color:#fff}
 .c-val{
   width:46px;text-align:center;
-  font-family:'Playfair Display',serif;
-  font-size:20px;
+  font-family:'sage',serif;
+  font-size:17px;
   color:var(--g-dark);
   font-weight:600;
 }
@@ -823,7 +839,7 @@ body{
   content:'';width:7px;height:7px;border-radius:50%;background:#fff;display:block;
 }
 .r-text{
-  font-family:'Playfair Display',serif;
+  font-family:'sage',serif;
   font-size:20px;color:var(--text);
 }
 
@@ -831,7 +847,7 @@ body{
   width:100%;padding:16px;
   background:var(--g);color:#fff;
   border:none;border-radius:3px;
-  font-family:'Jost',sans-serif;
+  font-family:'sage',sans-serif;
   font-size:13px;letter-spacing:4px;
   text-transform:uppercase;
   cursor:pointer;transition:background .3s;
@@ -860,7 +876,7 @@ body{
   text-align:center;
 }
 .final-text{
-  font-family:'Jost',sans-serif;
+  font-family:'sage',sans-serif;
   font-size:15px;
   letter-spacing:2px;
   line-height:1.9;
@@ -953,6 +969,7 @@ body{
       <svg id="play-ic" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       <svg id="pause-ic" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
     </button>
+    <div class ="music-text" > Әуенді қосу </div>
   </div>
 
   <div class="inv-greeting anim" data-delay="200">
@@ -1176,7 +1193,7 @@ const C = {
   host2:       "Даметкен",
 
   /* 📍 Место */
-  venueCity:   "Костанай қаласы",
+  venueCity:   "Қостанай қаласы",
   venueAddr:   "мкр-н. Северо-западный, <br> 53 квартал, 5",
   venueName:   '"Hanzada" мейрамханасы',
   mapLink:     "https://2gis.kz/kostanaj/firm/70000001039602937",
